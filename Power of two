@@ -1,0 +1,6 @@
+class Solution:
+    def isPowerofTwo(self, n):
+        # A number is power of 2 if it has only one set bit
+        if n <= 0:
+            return False
+        return (n & (n - 1)) == 0
